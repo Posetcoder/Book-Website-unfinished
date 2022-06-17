@@ -1,0 +1,20 @@
+{% extends "book/base.html" %}
+{% block content %}
+    {% for book in books %}
+        <a href= "/shop/book/{{book.id}}/">
+            <div class = "bookcard">
+                <div class = "bookcardimage">
+                    {% if book.imageshop %}
+                        <img src = "{{book.imageshop.url}}"> 
+                    {% else %}
+                        <img src = "{{book.image.url}}"> 
+                    {% endif %}
+                </div>
+                <div class = "bookcardtext">
+                    <h2>{{book.name}}</h2>
+                    <h5>{{book.price}}</h5>
+                </div>
+            </div>
+        </a>
+    {% endfor %}
+{% endblock %}

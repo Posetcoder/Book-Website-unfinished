@@ -1,0 +1,51 @@
+{% extends "book/base.html" %}
+{% block content %}
+<div class = "infopage">   
+    <form action = "/address/{{order}}/" method = "post">
+
+        {% csrf_token %}
+
+
+        <div class = "checkout">
+
+            <h1> CHECK OUT </h1>
+
+        </div>
+
+        <div class = "info">
+            <div class = email>
+
+                <label for="email">Your Email ID:</label> <br>
+                <input type="text" id="email" name = "email" placeholder="Email ID"> <br>
+
+                <label for="contact" id = "contactlabel">(or your Contact Number):</label> <br>
+                <input type="text" id = "contact" placeholder = "Contact Number" name="contactnum"> <br>
+
+            </div>
+
+            <div class = "address">
+
+                <label for="first">Your Address:</label> <br>
+                <input type="text" id="first" placeholder="First Name" name = "firstname">
+
+                <input type="text" id="last" placeholder="Last Name" name = "lastname"> <br>
+
+                <input type="text" id="address" placeholder="Unit Number & Street Name" name = "address"> <br>
+
+                <input type="text" id="country" placeholder="Country" name = "country"> <br>
+
+                <input type="text" id="postcode" placeholder="Post Code" name = "postcode">
+
+                <input type="text" id="state" placeholder="State" name = "state">
+
+                <input type="text" id="city" placeholder="City" name = "city"> <br>
+
+                <input type="submit" id="ptpbtn" value="Proceed to Payment">
+
+            </div>
+        </div>
+
+
+    </form>
+</div> 
+{% endblock %}

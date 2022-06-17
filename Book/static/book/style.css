@@ -1,0 +1,311 @@
+
+
+/*button code:
+    padding: 10px;
+    background-color: #312C2C;
+    border-color: #312C2C;
+    color: white;
+    border-radius: 7px;
+*/
+
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding:0;
+}
+
+.bookcard {
+    width: 400px;
+    margin: 20px 20px;
+    background-color: white;
+    overflow: hidden;
+    float: left;
+}
+
+.bookcardimage {
+    width: 100%;
+    height: 400px;
+    overflow:hidden;
+}
+
+.bookcardimage img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.bookdetail {
+    background-color: aliceblue;
+    width: 80%;
+    margin:auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.bookpageimg {
+    width:45%;
+    height: 400px;
+    overflow:hidden;
+    float:left;
+    margin: 20px;
+    padding: 0px;
+}
+
+.bookpageimage img {
+    object-fit: contain;
+    height: 100%;
+    
+}
+
+.bookpagetext {
+    width:45%;
+    height: 400px;
+    overflow:hidden;
+    float:left;
+    margin: 20px;
+
+}
+
+.infopage input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.header {
+    background-color: #F0f39E;
+}
+
+.header img {
+    height: 100px;
+}
+
+.links {
+    width: 60%;
+    float: right;
+    padding: 5px;
+}
+
+.links a {
+    font-size: 35px;
+    margin: 35px;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+    color: #000000;
+}
+
+.infopage{
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.infopage label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 41px;  
+}
+
+.info input {
+    font-size: 20px;
+    border-radius: 7px;
+    border-color: rgb(94, 92, 92);
+    border-style: solid;
+}
+
+#first {
+    width: 150px;
+    margin-right: 10px;
+}
+
+#last {
+    width:150px;
+}
+
+#address {
+    width: 314px;
+}
+
+#country {
+    width: 314px;
+}
+
+#postcode {
+    width: 100px;
+    margin-right: 3px;
+}
+
+#state {
+    width: 100px;
+    margin-right: 3px;
+}
+
+#city {
+    width:100px;
+}
+
+#email {
+    width:314px;
+}
+
+#contact {
+    width: 314px;
+}
+
+#ptpbtn {
+    padding: 10px;
+    background-color: #312C2C;
+    border-color: #312C2C;
+    color: white;
+    border-radius: 7px;
+}
+
+#contactlabel {
+    font-size: 20px
+}
+
+.email {
+    margin-bottom: 50px;
+}
+
+.address {
+    margin-bottom: 100px;
+}
+
+.bookpageimg {
+    width: 50%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.bookpageimg img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.listimg {
+    width: 90%;
+    display: block;
+    padding: 20px;
+}
+
+.listimg img {
+    max-width:10%;
+    height: 140px;
+}
+
+.bookshopdetail {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bookinfo {
+    width: 45%;
+    font-family: 'Roboto';
+    font-style: normal;
+    float:right;
+}
+
+.bookinfo h2 {
+    font-weight: 520;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.bookinfo h5 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.bookinfo p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#quantitynumber {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 10px
+}
+
+#quantitytext {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 13px;
+}
+
+#addtocartbutton {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 10px;
+    background-color: #312C2C;
+    color: white;
+    border-radius: 7px;
+    border-color: #312C2C;
+    margin-top: 15px
+}
+
+.outertable {
+    border-collapse: collapse;
+}
+
+
+.cartpage {
+    width: 80%;
+    margin: auto;
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+.cartpage th {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.outertable td {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    border-top: 2px solid rgb(37, 37, 37);
+}
+
+.cartpage i {
+    color:#312C2C;
+}
+
+.cartpage h3 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: uppercase;
+}
+
+.cartpage table {
+    width: 100%;
+    margin: auto;
+}
+
+.cartpage tr {
+    height: 200px;
+}
+
+.innertable img {
+    width:200px;
+}
+
+.innertable td {
+    border-collapse: collapse;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    border-color: white;
+    text-align: left;
+}

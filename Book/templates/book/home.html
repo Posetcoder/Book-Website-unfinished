@@ -1,0 +1,13 @@
+{% extends "book/base.html" %}
+{% block content %}
+    {% for book in books %}
+        <a href= "/book/{{book.id}}/">
+            <div class = "bookcard">
+                <div class = "bookcardimage">
+                    <img src = "{{book.image.url}}">
+                </div>
+
+            </div>
+        </a>
+    {% endfor %}
+{% endblock %}

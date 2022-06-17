@@ -1,0 +1,33 @@
+{% extends "book/base.html" %}
+{% block content %}
+
+    <div class = "bookdetail">
+
+        <h2>{{book.name}}</h2>
+        <h3>{{book.author}}</h3>
+
+        <div class = "bookpageimg">
+            <img src = "{{book.image.url}}">
+        </div>
+
+        <div>
+            <p>{{book.long_desc}}</p>
+            <h2> AVAILABLE TO BUY HERE: </h2>
+            <a href="{{book.externalBuy}}"> Amazon Buy </a>
+            <a href="/shop/book/{{book.id}}/"> BUY HERE (Recommended) </a>
+            {% for image in book.bookimage_set.all %}
+                <img src = "{{image.image.url}}">
+            {% endfor %}
+            <a href="/book/preview/{{book.id}}/"> READ & EXPLORE THE BOOK </a>
+            <h2> MEET THE CHARACTERS </h2>
+            {% for character in book.character_set.all %}
+            <p> {{character.name}} </p>
+            <img src = "{{character.image.url}}">
+            {% endfor %}
+            <iframe width="1280" height="720" src="{{book.trailer}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+
+        </div>
+    </div>  
+
+{% endblock %}

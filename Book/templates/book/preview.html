@@ -1,0 +1,11 @@
+{% extends "book/base.html" %}
+{% block content %}
+    {% for bookimage in book.bookstoryimage_set.all %}
+        <img src="{{bookimage.image1.url}}">
+        <img src="{{bookimage.image2.url}}">
+        <img src="{{bookimage.image3.url}}">
+    {% endfor %}
+    <a href="/book/{{book.id}}/">
+        <button> Back </button>
+    </a>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "book/base.html" %}
+{% block content %}
+
+    <div class = "bookshopdetail">
+
+        <div class = "bookpageimg">
+            <img src = "{{book.image.url}}">
+        </div>
+
+        <div class = "bookinfo">
+            <h2>{{book.name}}</h2>
+            <h5> ${{book.price}} </h5>
+            <h3> Written by {{book.author}}</h3>    
+            <p>{{book.long_desc}}</p>
+            <form action = "/addtocart/{{book.id}}/" method = "POST"> 
+                {% csrf_token %}
+                <h6 id = "quantitytext">Quantity:</h6>
+                <input type="number" name = "Quantity" max = "5" min = "1" value= "0" id = "quantitynumber"> <br>
+                <input type="submit" value="Add to Cart" id = "addtocartbutton">   
+            </form>
+
+        </div>
+    </div>  
+
+    
+    <div class = "listimg">
+        {% for image in book.bookimage_set.all %}
+            <img src = "{{image.image.url}}">
+        {% endfor %}
+    </div>
+
+{% endblock %}
